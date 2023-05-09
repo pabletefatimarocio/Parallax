@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Parallax Effects</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="bg.jpg" id="bg">
+        <img src="moon.png" id="moon">
+        <img src="mountain.png" id="mountain">
+        <img src="road.png" id="road">
+        <h2 id="text">Edgard Allan Poe</h2>
+    </section>
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+            
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+
+        })
+    </script>
+  <div class="cuentoUno">
+   <p>La incomparable aventura de un tal Hans Pfaall</p><br>
+
+  <p>Con el corazón lleno de furiosas fantasías<br>
+    De las que soy el amo<br>
+    Con una lanza ardiente y un caballo de aire,<br>
+    Errando voy por el desierto.<br>
+    (La canción de Tomás el loco)</p><br>
+  
+    <p>Parece ser que el día... de... (ignoro la fecha exacta), una vasta multitud se había reunido, por razones que no se mencionan, en la gran plaza de la Bolsa de la muy ordenada ciudad de Rotterdam. La temperatura era excesivamente tibia para la estación y apenas se movía una hoja; la multitud no perdía su buen humor por el hecho de recibir algún amistoso chaparrón de cuando en cuando, proveniente de las enormes nubes blancas profusamente suspendidas en la bóveda azul del firmamento. Hacia mediodía, sin embargo, se advirtió una notable agitación entre los presentes; restalló el parloteo de diez mil lenguas; un segundo más tarde, diez mil caras estaban vueltas hacia el cielo, diez mil pipas caían simultáneamente de la comisura de diez mil bocas, y un grito sólo comparable al rugido del Niágara resonaba larga, poderosa y furiosamente a través de la ciudad y los alrededores de Rotterdam. </p> <br>
+   <p>No tardó en descubrirse la razón de este alboroto. Por detrás de la enorme masa de una de las nubes perfectamente delineadas que ya hemos mencionado, viose surgir con toda claridad, en un espacio abierto de cielo azul, una sustancia extraña, heterogénea pero aparentemente sólida, de forma tan singular, de composición tan caprichosa, que escapaba por completo a la comprensión, aunque no a la admiración de la muchedumbre de robustos burgueses que desde abajo la contemplaban boquiabiertos. ¿Qué podía ser? En nombre de todos los diablos de Rotterdam, ¿qué pronosticaba aquella aparición? Nadie lo sabía; nadie podía imaginarlo; nadie, ni siquiera el burgomaestre, Mynheer Superbus Von Underduk, tenía la menor clave para desenredar el misterio. Así, pues, ya que no cabía hacer nada más razonable, todos ellos volvieron a colocarse cuidadosamente la pipa a un lado de la boca y, mientras mantenían los ojos fijamente clavados en el fenómeno, fumaron, descansaron, se contonearon como ánades, gruñendo significativamente, y luego volvieron a contonearse, gruñeron, descansaron y, finalmente... fumaron otra vez. </p><br>
+   <p>Entretanto el objeto de tanta curiosidad y tanto humo descendía más y más hacia aquella excelente ciudad. Pocos minutos después se encontraba lo bastante próximo para que se lo distinguiera claramente. Parecía ser... ¡Sí, indudablemente era una especie de globo! Pero un globo como jamás se había visto antes en Rotterdam. Pues, permítaseme preguntar, ¿se ha visto alguna vez un globo íntegramente fabricado con periódicos sucios? No en Holanda, por cierto; y, sin embargo, bajo las mismísimas narices del pueblo —o, mejor dicho, a cierta distancia sobre sus narices— veíase el globo en cuestión, como lo sé por los mejores testimonios, compuesto del aludido material que a nadie se le hubiera ocurrido jamás para semejante propósito. Aquello constituía un egregio insulto al buen sentido de los burgueses de Rotterdam. </p><br>
+</div>
+<button> 
+    <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/LA%20INCOMPARABLE.pdf"  target="_blank" rel="noopener noreferrer">seguir leyendo →</a>
+</button>
+</body>
+</html>
